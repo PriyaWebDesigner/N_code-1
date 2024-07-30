@@ -18,10 +18,20 @@
     margin-top: 80px;
     box-shadow: 0 30px 40px rgba(16, 1, 1, 0.1);
     overflow: hidden;
+    border: none;
 }
 .custom-a{
     text-decoration: none;
-    /* padding: 6px 10px; */
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(116, 10, 10);
+    color: aliceblue;
+    border: none;
+}
+.custom-a:hover{
+    background-color: rgb(6, 100, 70); 
+    color: rgb(254, 253, 255);
 }
 .container .card:before{
     content: '';
@@ -56,8 +66,14 @@
     color: #777;
     font-weight: 600;
 }
+.container .card div h2:hover{
+    color: rgb(20, 91, 206);
+}
 .container .card div p{
     font-size: 15px; 
     transition: 0.5s;
     font-weight: bold;
+}
+.container .card div p:hover{
+    color: beige;
 }
