@@ -9,19 +9,20 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .fa-youtube {
+        /* .fa-youtube {
             font-size: large;
             color: red;
-        }
+        } */
         *{
             margin: 0;
             padding: 0;
             font-family: sans-serif;
         }
         img{
-            height: 300px;
+            height: 330px;
             width: 250px;
             border-radius: 3px;
+            transition: .5s;
         }
         body{
             display: flex;
@@ -33,55 +34,83 @@
             display: flex;
         }
         .card{
-            height: 300px;
+            height: 330px;
             margin: 50px;
             box-shadow: 5px 5px 20px black;
             overflow: hidden;
 
         }
         .intro{
-            height: 150px;
+            height: 60px;
             width: 250px;
             padding: 6px;
             box-sizing: border-box;
             position: absolute;
-            background:rgb(27, 27,27,5);
+            /* background: rgb(27, 27, 27, 5); */
+            background: rgba(87, 84, 84, 0.5);
+            bottom: 180px;
+            color: white;
+            transition: .5s;
+        }
+        h1{
+            margin: 10px;
+            font-size: 30px;
+
+        }
+        p{
+            margin-left: 10px;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .card:hover{
+            cursor: pointer;
+        }
+        .card:hover .intro{
+            height: 180px;
+            width: 250px;
+            bottom: 180px;
+            background: rgb(27, 27, 27, 5);
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1) rotate(-3deg);
         }
     </style>
 </head>
 
 <body>
-    <!-- <li class="fa fa-search"></li>
+    <!-- <i class="fa fa-search"></i>
     <i class="fa-solid fa-eye"></i>
     <i class="fa-brands fa-twitter"></i>
     <i class="fa-brands fa-youtube"></i> -->
 
     <div class="container">
         <div class="card">
-            <img src="img/img1.jpg" alt="">
+            <img src="img/img2.jpg" alt="">
             <div class="intro">
-                <h1>Watch</h1>
+                <h1>Table</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores dolorum debitis, dicta, minima sed
-                    numquam repellendus blanditiis quis reprehenderit recusandae sint quisquam labore commodi quod
-                    corporis assumenda illo ex laboriosam.</p>
+                    numquam repellendus blanditiis quis reprehenderit recusandae.
+                </p>
             </div>
         </div>
         <div class="card">
-            <img src="img/img1.jpg" alt="">
+            <img src="img/img3.jpg" alt="">
             <div class="intro">
-                <h1>Watch</h1>
+                <h1>Tea Pot</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores dolorum debitis, dicta, minima sed
-                    numquam repellendus blanditiis quis reprehenderit recusandae sint quisquam labore commodi quod
-                    corporis assumenda illo ex laboriosam.</p>
+                    numquam repellendus blanditiis quis reprehenderit recusandae</p>
             </div>
         </div>
         <div class="card">
-            <img src="img/img1.jpg" alt="">
+            <img src="img/img4.jpg" alt="">
             <div class="intro">
-                <h1>Watch</h1>
+                <h1>Sunglass</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores dolorum debitis, dicta, minima sed
-                    numquam repellendus blanditiis quis reprehenderit recusandae sint quisquam labore commodi quod
-                    corporis assumenda illo ex laboriosam.</p>
+                    numquam repellendus blanditiis quis reprehenderit recusandae.</p>
             </div>
         </div>
     </div>
